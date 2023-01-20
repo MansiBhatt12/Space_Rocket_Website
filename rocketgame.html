@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="cssrocketgame.css">
+	<link rel="stylesheet" href="mymy.css">
+    ​<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Falcon heavy rocket with HTML CSS JS</title>
+</head>
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo"><img src="Launch1.png" alt="logo"></div>
+			<li><a href="main.html"> HOME</a></li>
+			<li><a href="about.html"> ABOUT</a></li>
+			<div class="dropdown">
+                <button class="dropbtn">SERVICES</button>
+            <div class="dropdown-content">
+                <a href="job.html">Job Hiring</a>
+                   <a href="events.html">Contest</a> 
+            </div>
+			</div>
+			<div class="dropdown">
+                <button class="dropbtn">EDUCATION</button>
+            <div class="dropdown-content">
+                <a href="sci.html">Science & Astronomy</a>
+				   <!--<a href="vedios.html">Vedios</a> ///-->
+				   <a href="game.html">Fun & Game</a> 
+            </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">RESOURCES</button>
+          <div class="dropdown-content">
+              <a href="contactus.html">Contact Us </a>
+         
+          </div>
+          </div>
+		</ul>
+		<div class="rightnav">
+			<input type="text" name="search" id="search">
+			<a href="https://www.google.com/" style="text-decoration: none;">
+			<button class="btn-sm">Search</button></a>
+		</div>
+    </nav>
+
+	<div class="canvas">
+		<div class="rocket">
+			<img src="spacex.png" alt=""><span></span>
+		</div>
+	</div>
+
+
+	<script>
+		document.addEventListener("mousemove",function(e){
+			var rocket = document.querySelector('.rocket');
+			rocket.style.left = e.offsetX+'px';
+			rocket.style.top = e.offsetY+'px';
+			
+		})
+		function stars() {
+			let count = 50;
+			let canvas = document.querySelector('.canvas');
+
+			let i = 0;
+
+
+			while(i < count){
+				let star = document.createElement('i');
+				let x = Math.floor(Math.random() * window.innerWidth);
+				let duration = Math.random() * 1;
+				let h = Math.random() * 100;
+
+				star.style.left = x + 'px';
+				star.style.width = 1 + 'px'
+				star.style.height = h + 'px';
+
+				star.style.animationDuration = duration + 's';
+
+				canvas.appendChild(star);
+
+				i++;
+			}
+		}
+
+		stars();
+	</script>
+
+<footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2027 www.spacerocket.com - All rights reserved
+        </p>			
+</footer>
+</body>
+</html>

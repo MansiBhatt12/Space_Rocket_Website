@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+  <link rel="stylesheet" href="mymy.css">
+  <script src="js/resp.js"></script>
+    ​<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="navbar background .h-nav-resp">
+		<ul class="nav-list v-class-resp">
+			<div class="logo"><img src="Launch1.png" alt="logo"></div>
+			<li><a href="main.html"> HOME</a></li>
+			<li><a href="about.html"> ABOUT</a></li>
+			<div class="dropdown">
+                <button class="dropbtn">SERVICES</button>
+            <div class="dropdown-content">
+                <a href="job.html">Job Hiring</a>
+                   <a href="events.html">Contest</a> 
+            </div>
+			</div>
+			<div class="dropdown">
+                <button class="dropbtn">EDUCATION</button>
+            <div class="dropdown-content">
+                <a href="sci.html">Science & Astronomy</a>
+				   
+				   <a href="game.html">Fun & Game</a> 
+            </div>
+            </div>
+			<div class="dropdown">
+                <button class="dropbtn">RESOURCES</button>
+            <div class="dropdown-content">
+                <a href="contactus.html">Contact Us </a>
+				
+            </div>
+            </div>
+    </ul>
+    
+		<div class="rightnav v-class-resp">
+			<!--<input type="text" name="" id="search" onkeyup="filterFunction()">
+			<button class="btn-sm"><a href="isro.html" style="color: white; text-decoration: none;">Main Menu</a></button>-->
+        </div>
+
+        <div class="burger">
+          <div class="line-1-1"></div>
+          <div class="line-1-1"></div>
+          <div class="line-1-1"></div>
+        </div>
+
+        </nav>
+    
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <h1 class="heading">SPACE ROCKET</h1>
+                <ul>...Ready Jet Go!Space Explorer...</ul><p class="text-big">Inspiring Earth's next generation of explores!</p>
+                <p class="text-small">We're making virtual learning easier by highlighting jobs hiring , educational content, activites and events...</p>
+            </div>
+
+            <div class="slideshow-automatic">
+
+                <div class="mySlides fade" style="display: block;">
+                    <div class="isro">
+                        <img src="onesr.jfif" alt="" >
+                    </div>
+               </div>
+               <div class="mySlides fade" style="display: block;">
+                <div class= "isro">
+                  <img src="twoSR.jfif" alt="">
+               </div>
+              </div>
+
+              <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+         
+              <script>
+                var slideIndex = 0;
+                showslides();
+                
+                function showslides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" activeone", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " activeone";
+                  setTimeout(showslides, 2000); // Change image every 2 seconds
+                }
+                </script>
+
+        </div>
+    </section>	
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2027 www.spacerocket.com - All rights reserved
+            </p>			
+    </footer>
+    
+</body>
+</html>
+

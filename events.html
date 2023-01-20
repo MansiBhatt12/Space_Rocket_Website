@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<link rel="stylesheet" href="mymy.css">
+    ​<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo"><img src="Launch1.png" alt="logo"></div>
+			<li><a href="main.html"> HOME</a></li>
+			<li><a href="about.html"> ABOUT</a></li>
+			<div class="dropdown">
+                <button class="dropbtn">SERVICES</button>
+            <div class="dropdown-content">
+                <a href="job.html">Job Hiring</a>
+                   <a href="events.html">Contest</a> 
+            </div>
+			</div>
+			<div class="dropdown">
+                <button class="dropbtn">EDUCATION</button>
+            <div class="dropdown-content">
+                <a href="sci.html">Science & Astronomy</a>
+				   
+				   <a href="game.html">Fun & Game</a> 
+            </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">RESOURCES</button>
+          <div class="dropdown-content">
+              <a href="contactus.html">Contact Us </a>
+      
+          </div>
+          </div>
+		</ul>
+		<div class="rightnav">
+    <!--<input type="text" name="search" id="search">-->
+    <a href="https://www.google.com/" style="text-decoration: none;">
+			<button class="btn-sm">Search</button></a>
+		</div>
+    </nav>
+    
+    <section class="competition" id="events">
+        <div class="halfcbg">
+        <h1 class="hmid big" style="color: white;"><b>CONTEST</b></h1>
+    </div>
+    
+        <h1 class="sectag heading-big line">COMPETITION 
+            EVENTS:Back To School</h1>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Spacegallerycompetition.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="spaceposter.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+               <ul class="cmid" style="font-size: 20px;">Join in one of many excting sponsored contests!</ul>
+               
+               <div class= "secleft">
+                 <div class="para1">
+                   <p class="sectag text-big"> Entries to reach us-</p>
+                <!--<p class="secsubtag text-small">-->
+                  <div class="thumbnail3">
+                    <img src="entry.gif" alt="reach us" style="width: 10%;float: right;margin-bottom: 50px; height: 10%;">
+                   </div>
+            <ul class="secsubtag text-small ">
+                <li>Themes include everything from orbits and planets to astronauts and asteriods.</li>
+                <li>Artwork could be a painting,model or mobile...use your imagination!</li>
+                <li>Maximum age limit for competition entries is 10 to 18. </li>
+                <li>The best entries will be selected to go into the Space Gallery, and the overall winner will receive a certificate.</li>
+        <li>Upload your artwork in the form below </li>
+            </ul>
+            </div>
+            </div>
+
+           
+
+            <h3 class="secsubtag text-big  cmid line3">Space artwork, by kids on different themes...</h3>
+         
+            <div class="slideshow-container">
+              <div class="myslides">
+                <div class="numbertext">1 / 6</div>
+                <img src="childrenposterone.jpg" style="width:50%">
+              </div>
+            
+              <div class="myslides">
+                <div class="numbertext">2 / 6</div>
+                <img src="kidone.jpg" style="width:50%">
+              </div>
+            
+              <div class="myslides">
+                <div class="numbertext">3 / 6</div>
+                <img src="kidtwo.jpg" style="width:50%">
+              </div>
+                
+              <div class="myslides">
+                <div class="numbertext">4 / 6</div>
+                <img src="kidthree.jpg" style="width:50%">
+              </div>
+            
+              <div class="myslides">
+                <div class="numbertext">5 / 6</div>
+                <img src="kidfour.jfif" style="width:50%">
+              </div>
+                
+              <div class="myslides">
+                <div class="numbertext">6 / 6</div>
+                <img src="kidfive.jpg" style="width:50%">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+            
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="childrenposterone.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hardworking Children">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="kidone.jpg" style="width:100%" onclick="currentSlide(2)" alt="Solar System">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="kidtwo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Proud Astronaut">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="kidthree.jpg" style="width:100%" onclick="currentSlide(4)" alt="Life in Space">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="kidfour.jfif" style="width:100%" onclick="currentSlide(5)" alt="Beautiful Galaxy">
+                </div>    
+                <div class="column">
+                  <img class="demo cursor" src="kidfive.jpg" style="width:100%" onclick="currentSlide(6)" alt="Alien Handprint">
+                </div>
+              </div>
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showslides(slideIndex);
+            
+            function plusSlides(n) {
+              showslides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showslides(slideIndex = n);
+            }
+            
+            function showslides(n) {
+              var i;
+              var slides = document.getElementsByClassName("myslides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+<br><br><br>
+<br><br>
+
+
+
+<form action="action_page.php">
+  <div class="bgform">
+  <div class="container-one ">
+   
+  <h1  class="sectag heading-big col-c-1 line2"><strong>**Space Gallery Competition**</strong></h1>
+  <div class="form">
+  <p  class="secsubtag text-small" style="color:rgb(252, 252, 252)">>>> Please, submit the data for the competion...<img src="programming.gif" alt="fill form" style="  width: 10%; height: 10%; margin-left: 30px;" ></p>
+  <br><br>
+ 
+  <br>
+         <section>
+         <label for="name" style="color: white;"><b>Name of child</b></label>
+         <input type="name" placeholder="Name" name="" id="name" required>
+         </section>
+         <section>
+         <label for="parent name" style="color: white;"><b> Parent Name</b></label>
+         <input type="parent" placeholder="Parent Name"name="parent" id="parent" required>
+         </section>
+         <section>
+          <label for="name" style="color: white;"><b>Address</b></label>
+          <input type="name" placeholder="Address Proof" name="" id="name" required>
+          </section>
+         <section>
+          <label for="email"  style="color: white;"><b>Email Address</b></label>
+          <input type="email" placeholder="Enter Email" name="email" id="email" required>
+     </section>
+     <section>
+         <label for="country"  style="color: white;"><b>Country</b></label>
+         <input type="country" placeholder="Country" name="country" id="country" required>
+        <br><br>
+         <div class="slidecontainer">
+          <input type="range" min="10" max="18" value="50" class="slider" id="myRange">
+          <p  style="color: white;">Age: <span id="demo"></span></p>
+        </div>
+        
+        <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+        </section>
+     <br><br>
+     <h4  style="color: white;">Click on the "Choose File" button to upload a file:</h4>
+     <br>
+     <input style="color: white;" type="file" id="myFile" name="file">
+     <br><br><br>
+     <h4  style="color: white;">Click the "Try it" button to disable the file upload button.</h4>
+     <br>
+     <button onclick="myFunction()">Try it</button>
+     
+     <script>
+     function myFunction() {
+       var x = document.getElementById("myFile");
+       x.disabled = true;
+     </script>
+     <br><br><br>
+     
+             <button type="submit" class="registerbtn" onclick="alert('Your Space Gallery Competition Form is Submitted')">Submit</button>
+             <br><br><br> <hr>
+     </div>
+    </div>
+           </form>  
+     </section>
+
+     <footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2027 www.spacerocket.com - All rights reserved
+        </p>			
+</footer>
+    
+</body>
+</html> 

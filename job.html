@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<link rel="stylesheet" href="mymy.css">
+    ​<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo"><img src="Launch1.png" alt="logo"></div>
+			<li><a href="main.html"> HOME</a></li>
+			<li><a href="about.html"> ABOUT</a></li>
+			<div class="dropdown">
+                <button class="dropbtn">SERVICES</button>
+            <div class="dropdown-content">
+                <a href="job.html">Job Hiring</a>
+                   <a href="events.html">Contest</a> 
+            </div>
+			</div>
+			<div class="dropdown">
+                <button class="dropbtn">EDUCATION</button>
+            <div class="dropdown-content">
+                <a href="sci.html">Science & Astronomy</a> 
+				   <a href="game.html">Fun & Game</a> 
+            </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">RESOURCES</button>
+          <div class="dropdown-content">
+              <a href="contactus.html">Contact Us </a>
+      
+          </div>
+          </div>
+		</ul>
+		<div class="rightnav">
+      <!--<input type="text" name="search" id="search">-->
+      <a href="https://www.google.com/" style="text-decoration: none;">
+			<button class="btn-sm">Search</button></a>
+		</div>
+    </nav>
+
+    <section class="hire" id="job">	
+        <div class="halfbg">		 
+    <h1 class="hmid big"> SPACE JOB FINDER </h1>
+</div>
+    </section>
+    <section class="hire">
+    <h3 class="sectag heading-big line">
+        Get New High Paying  Job Sent Directly to your Inbox Every Day!
+    </h3>
+        <h2 class="secsubtag heading-small">Find Certified Jobs..</h2>
+        
+        <div class="slideshow-automatic">
+
+            <div class="mySlides fade" style="display: block;">
+                <div class="numbertextone">1 / 3</div>
+                <div class="imghire">
+        <img src="space.jpg" style="width:100%;">
+    </div>
+        </div>
+
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertextone">2 / 3</div>
+            
+            <div class="imghire">
+            <img src="jobtwo.jpg" style="width:100%">
+            <!--<div class="text">Caption Two</div>--></div>
+          </div>
+
+          <div class="mySlides fade" style="display: block;">
+            <div class="numbertextone">3 / 3</div>
+            <div class="imghire">
+            <img src="jobfour.jpg" style="width:100%">
+            <!--<div class="text">Caption Three</div>--></div>
+          </div>
+        
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+         
+          <figcaption  class="caption"><p>space industries is hiring like crazy</p></figcaption>
+          
+          <script>
+          var slideIndex = 0;
+          showslides();
+          
+          function showslides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" activeone", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " activeone";
+            setTimeout(showslides, 2000); // Change image every 2 seconds
+          }
+          </script>
+</section>
+
+<section class="section hire secleft">
+  <div class="paras">
+     <h2 class=" choose tagsec text-big gapabove" > <b>Why To Choose?</b></h2>
+     <ul class=" choose secsubtag text-small gap ">
+        <li>Get daily job openings sent directly to your inbox.</li>
+        <li>Receive information about certified job opportunities.</li>
+
+        <li>Search thousands of jobs for free.</li>
+     </ul>
+  </div>
+     <div class="gif">
+      <img src="choosespace.gif" alt="telescope">
+     </div>
+    </section>
+   
+ 
+
+<form action="action_page.php">
+<div class="container">
+<h1  class="sectag heading-big line2"><strong>*Registration Form*</strong></h1>
+<div class="form">
+<p  class="secsubtag text-small colr">>>> Fill in this form to create an account.</p>
+<hr>
+
+<label for="first name"><b>First Name</b></label>
+<input type="first" placeholder="First Name" name="first" id="first" required>
+
+
+<label for="second name"><b>Last Name</b></label>
+<input type="second" placeholder="Last Name"name="second" id="second" required>
+
+
+<label for="email"><b>Email Address</b></label>
+<input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+<label for="psw-repeat"><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+<hr>
+
+<p>*Valid Email Address Required-Confrim Before Submitting*</p>
+
+<h4 class="gapabove">Click on the "Choose File" button to upload a Resume:</h4>
+
+<input class="gapone" type="file" id="myFile" name="file">
+
+<button type="submit" class="registerbtn" onclick="alert('Your Registration Form is Submitted')">Submit</button>
+
+
+<p>By submitting this form,you acknowledge and accept our privacy policy found here : <a href="#">Terms & Privacy</a>. You are subscribing to receive daily email notifications about jobs and income opportunities. We respect your privacy and will not share your personal information under any circumstances.</p>
+</div>
+
+<!--<div class="container signin">
+<p>Already have an account? <a href="signup.html">Sign up</a>.</p>
+</div>
+
+<div class="container forgot">
+  <a href="#"  class="btn">Forgot password?</a>
+</div>-->
+
+</div>
+</form>
+
+<footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2027 www.spacerocket.com - All rights reserved
+        </p>			
+</footer>
+
+</body>
+</html>

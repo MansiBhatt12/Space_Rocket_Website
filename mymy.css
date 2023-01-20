@@ -1,0 +1,1283 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.logo{
+	width: 25%;
+	display: flex;
+	justify-content:center;
+	align-items: center; 
+}
+
+.logo img{
+	width: 30%;
+	border: 1px solid white;
+	border-radius: 50px; 
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	cursor: pointer;
+	/*overflow: hidden;*/
+	}
+
+.nav-list{
+	width: 70%;
+	display: flex;
+	align-items: center;
+	/*overflow: hidden;*/
+}
+
+.nav-list li{
+	list-style: none;/*dots remove*/
+	padding: 24px 30px;
+}
+
+.nav-list li a{ 
+	text-decoration: none;/*underline remove*/
+	color:white;
+	font-size: 18px;
+	/*font-family: 'Ubuntu', sans-serif; */
+	/*float: left;*/
+  text-align: center;
+  /*padding: 14px 16px;*/
+}
+
+.nav-list li a:hover,.dropdown:hover .dropbtn{ /*hover pesudeo selector change the color of icon*/
+	color:greenyellow;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+	font-size: 18px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 24px 30px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+.rightnav{
+	width: 40%;
+	text-align: right;
+	padding: 0 20px;
+}
+
+#search{
+	padding: 3px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+
+.btn-sm{
+	padding: 4px 6px;
+	vertical-align: middle;
+	margin: 1px 0;
+	font-size: 16px;
+	border-radius: 6px;
+	border: 1px solid white;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-sm:hover {
+	background: rgb(78, 78, 78);
+  }
+
+.btn-dark{
+	border: 1px solid grey;
+	color: black;
+	    padding: 5px 6px;
+	    cursor: pointer;
+}
+
+.background{
+	background: rgba(0,0,0,0.7) url('backgrnd.jfif');
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+.firstsection{
+	height: 100vh;
+}
+
+.box-main{
+	max-width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+	margin: auto;
+	height: 80%;
+}
+
+.firsthalf{
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+
+}
+
+.secondhalf{
+		width: 50%;
+}
+
+.isro img{
+	width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 160px;
+    display: block;
+    margin: auto;
+}
+
+.heading{
+	font-size: 50px;
+}
+
+.text-big{
+		font-size: 30px;
+}
+
+.text-small{
+		font-size: 20px;
+	}
+
+.section{
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 80%;
+	margin: auto;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.paras{
+	padding: 0px 65px;
+
+}
+
+.secleft{
+	flex-direction: row-reverse;
+}
+
+.sectag{
+	padding: 16px 0;
+
+}
+.textname{
+	font-size: 23px;
+}
+
+.secsubtag{
+	font-family:'Dosis', sans-serif;	
+}
+
+.thumbnail img{
+		width: 250px;
+		border: 2px solid black;
+		border-radius: 26px;
+		margin-top: 10px;
+}
+
+.line1{
+	text-align: center;
+    /*color: #555 !important;*/
+	padding-bottom: 10px;
+}
+.line1::after{
+	content: '';
+	background: #007bff;
+	display: block;
+	height: 3px;
+	width: 253px;
+	margin: 20px auto 5px;
+  
+}
+
+.hire{
+	background-color: white;
+	margin: auto;
+	/*padding: 0px 65px;*/
+    align-items: center;
+	justify-content: center;
+	/*max-width: 80%;*/
+
+}
+
+.halfbg {
+	/* The image used */
+	background-image: url("galaxy.jpg");
+  
+	/* Full height */
+	height: 400px; 
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hmid{
+	text-align: center;
+    padding: 180px;
+	margin-bottom: 60px;
+}
+
+.big{
+	font-size: 50px;
+	color: black;
+	/*t: black;*/
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.caption{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.large{
+	font-size: 50px;
+	padding-top: 30px;
+	font-family:'Ubuntu', sans-serif;
+	 text-align: center;
+
+}
+.gap{
+	padding-bottom: 130px;
+}
+
+.gapabove{
+	padding-top: 60px;
+}
+
+.choose{
+	height: 100px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    /* padding: 30px 0px; */
+	/*padding-top: 50px;*/
+}
+
+.tagsec{
+	padding: 68px 0;
+}
+
+.heading-big{
+	padding: 40px 300px;
+	font-family:'Dosis', sans-serif;
+	 text-align: center;
+	font-size: 40px;
+}
+
+.heading-small{
+	font-size: 25px;
+	padding-top: 15px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.line::after{
+	content: '';
+    background: #023770;
+    display: block;
+    height: 10px;
+    width: 750px;
+    margin: 40px auto 5px;
+}
+
+* {box-sizing: border-box;}
+
+img {vertical-align: middle;}
+
+.slideshow-automatic {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+
+.imghire img{
+	width: 40%;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 30px;
+    /* display: flex; */
+    /* text-align: center; */
+    /* padding: 0px 400px; */
+    /* justify-content: center; */
+    display: block;
+	margin-left: auto;
+	position: initial;
+    margin-right: auto;
+  
+}
+.gif img{
+	display: flex;
+	width: 300px;
+	height: 234px;
+padding-top: 62px;
+}
+
+.mySlides {
+	display: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertextone {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .activeone {
+	background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+	.text {font-size: 11px}
+  }
+
+  .line2::after{
+	content: '';
+    background: #165da9;;
+    display: block;
+    height: 6px;
+    width: 750px;
+    margin: 20px auto 5px;
+}
+
+.line2::before{
+	content: '';
+    background: #165da9;;
+    display: block;
+    height: 6px;
+    width: 750px;
+    margin: 40px auto 20px;
+}
+
+
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color:#f3f2f2;
+
+
+  h1{
+    color: black;
+  }
+  p{
+    color: black;
+  }
+}
+
+/* Full-width input fields */
+input[type=first],input[type=second],input[type=email], input[type=password] ,input[type=Name],input[type=parent],input[type=country]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #d8d8d8;
+}
+
+input[type=first]:focus,input[type=second]:focus,input[type=email]:focus, input[type=password]:focus ,input[type=parent]:focus,input[type=name]:focus,input[type=country]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.gapone{
+	padding-bottom: 30px;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.registerbtn:hover {
+  background-color: rgb(17, 133, 52);
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.forgot{
+	
+    text-align: center;
+}
+
+.competition{
+	background-color:white;
+    margin: auto;
+    padding: 0px 0px;
+    align-items: center;
+    justify-content: center;
+   max-width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-one{
+padding: 16px;
+/*background-color:#f3f2f2;*/
+
+
+h1{
+  color: black;
+}
+p{
+  color: black;
+}
+}
+.colr{
+	color: rgb(46, 4, 4);
+}
+.col-c-1{
+	color: white;
+}
+
+.bgform{
+	background: rgba(0,0,0,0.7) url('formimg.jpg');
+	background-size: cover;
+	background-blend-mode: darken;
+  }
+
+.line3::after{
+content: '';
+background: #192838;;
+display: block;
+height: 4px;
+width: 750px;
+margin: 20px auto 20px;
+}
+.para1{
+	padding: 0 140px;
+	padding-bottom: 70px;
+}
+.cmid{
+	text-align: center;
+	margin-bottom: 60px;
+	
+}
+
+
+.halfcbg {
+	/* The image used */
+	background-image: url("roundtwo.gif");
+  background-blend-mode: darken;
+	/* Full height */
+	height: 400px; 
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+		background-size: cover;}
+
+.imgcom img{
+	width: 40%;
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* padding: 0px 400px; */
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 250px; */
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 10px;
+}
+
+.slidecontainer {
+	width: 100%;
+  }
+  
+  .slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 15px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  .slider:hover {
+	opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
+  }
+  * {
+	box-sizing: border-box;
+  }
+  
+  img {
+	vertical-align: middle;
+  }
+ 
+ /* Position the image container (needed to position the left and right arrows) */
+  .slideshow-container{
+	position: relative;
+	padding-left: 30%;
+  }
+  
+  /* Hide the images by default*/ 
+  .myslides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+   /* Next & previous buttons */
+ .prev
+  {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+ 
+ }
+ .next{
+ cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1px;
+    padding-right: 37%;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /*.prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }*/
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 20px 16px;
+	color: white;
+	margin-right:50%;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 8.3%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+  .contact{
+	/*background-color: #f2f2f2;*/
+	height: 833px;
+	background-color: white;
+  color: #222;
+  padding-bottom: 30px;
+  margin-bottom: -30px;
+}
+
+
+
+  .halfbgtwo {
+	/* The image used */
+	background-image: url("contact.png");
+  
+	/* Full height */
+	height: 400px; 
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.subheader {
+	font-size: 1.25em;
+    margin-top: 25px;
+    text-align: center;
+    padding: 20px;
+    padding-right: 200px;
+		padding-left: 200px;
+}
+
+  .text-center{
+	  text-align: center;
+	  padding-top: 30px;
+	  font-family:'Ubuntu',sans-serif;
+	  font-size: 35px;
+
+  }
+.form-get{
+	font-size: 35px;
+	padding-top: 20px;
+}
+  .so-small{
+	  font-size: 19px;
+	  padding: 10px 5px;
+  }
+  .form{
+	  max-width: 900px;
+	  margin: 25px auto;
+  }
+  .form-input{
+	  margin: 14px 0;
+	  padding: 5px 3px;
+	  width: 100%;
+	  font-size: 19px;
+	  border: 2px solid grey;
+	  border-radius: 6px;
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .text-footer{
+	text-align: center;
+	padding: 30px 0;
+	font-family:'Ubuntu',sans-serif;
+	display: flex;
+	justify-content: center;
+	color: white;
+  }
+
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* style the container */
+  .login {
+	position: relative;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px 0 30px 0;
+	padding-left: 500px;
+  } 
+  
+  /* style inputs and link buttons */
+  .output,
+  .btn {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	margin: 5px 0;
+	opacity: 0.85;
+	display: inline-block;
+	font-size: 17px;
+	line-height: 20px;
+	text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+	opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+	background-color: #3B5998;
+	color: white;
+  }
+  
+  .twitter {
+	background-color: #55ACEE;
+	color: white;
+  }
+  
+  .google {
+	background-color: #dd4b39;
+	color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  /* Two-column layout */
+  .col {
+	float: left;
+	width: 50%;
+	margin: auto;
+	padding: 0 50px;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* vertical line */
+  .vl {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	border: 2px solid #ddd;
+	height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-innertext {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+	display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+	text-align: center;
+	background-color: #666;
+	border-radius: 0px 0px 4px 4px;
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+	.col {
+	  width: 100%;
+	  margin-top: 0;
+	}
+	/* hide the vertical line */
+	.vl {
+	  display: none;
+	}
+	/* show the hidden text on small screens */
+	.hide-md-lg {
+	  display: block;
+	  text-align: center;
+	}
+  }
+  .halfbgsci{
+	/* The image used */
+	background-image: url("astromomy.png");
+  
+	/* Full height */
+	height: 400px; 
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.halfbgvd{
+		/* The image used */
+		background-image: url("vd.png");
+	  
+		/* Full height */
+		height: 400px; 
+	  
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+			background-size: cover;
+		}
+	
+		.flip-card {
+			background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* width: 40%; */
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* padding: 0px 400px; */
+    /* justify-content: center; */
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 250px; */
+    /* border: 2px solid black; */
+    /* border-radius: 26px; */
+	margin-top: 10px;
+	margin-bottom: 25px;
+		  }
+		  
+		  .flip-card-inner {
+			position: initial;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.6s;
+			transform-style: preserve-3d;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		  }
+		  
+		  .flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		  }
+		  
+		  .flip-card-front, .flip-card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		  }
+		  
+		  .flip-card-front {
+			background-color: #bbb;
+			color: black;
+		  }
+		  
+		  .flip-card-back {
+			background-color: #2980b9;
+			color: white;
+			transform: rotateY(180deg);
+		  }
+/*----------------TEAM-----------------------*/
+
+
+		  .team{
+			  padding-top: 50px;
+			  padding-bottom: 50px;
+			  color: #555;
+			  font-size: 50px;
+		  }
+
+		  .teamone{
+			  padding-bottom: 30%;
+			  	  }
+
+		  .box img{
+		
+		width: 70%;
+		height: 70%;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 10px;
+			
+		}
+		
+		.col-t-3 {
+			float: left;
+			width: 33.3%;
+			margin-bottom: 16px;
+			padding: 0 8px;
+		  }
+
+		  .t1head::after,.t2head::after.row-t::after {
+			content: "";
+			clear: both;
+			display: table;
+		  }
+
+		  .t-heading{
+			  text-align: center;
+			  color: #555 !important;
+			  padding-bottom: 10px;
+
+		  }
+
+		  .t-heading::after{
+			  content: '';
+			  background: #007bff;
+			  display: block;
+			  height: 3px;
+			  width: 170px;
+			  margin: 20px auto 5px;
+		  }
+		  .profile-pic{
+			  margin-top: 20px;
+		  }
+		.profile-pic, .box{
+			opacity: 1;
+			display: block;
+			position: relative;
+			padding-top: 10px;
+		}
+		.profile-pic ,.box img{
+			filter: grayscale(1);
+		}
+		.profile-pic, .box ,img:hover{
+			filter: grayscale(0);
+			cursor: pointer;
+
+		}
+
+		.profile-pic, .t2head{
+			font-size: 22px;
+			font-weight: bold;
+			margin-top: 15px;
+			color: #007bff !important;
+		}
+
+		.profile-pic , .t3head{
+			font-size: 15px;
+			font-weight: bold;
+			margin-top: 15px;
+			color: #007bff !important;
+		}
+
+		.team .fa{
+			height: 25px;
+			background: #fff;
+			color: #007bff !important;
+			border-radius: 50% ;
+			padding: 4px;
+			width: 25px;
+		}
+.box ul{
+	padding: 15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+.box ul li{
+	padding: 5px;
+	display: inline-block;
+}
+
+.box:hover ul{
+	opacity: 1;
+
+}
+
+.box ul, .box ul li{
+	transition:0.5 ;
+
+}
+
+@media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+
+/*-------------promo----------------------*/
+.promo{
+	background: rgba(0,0,0,0.7) url('brick.jfif');
+	background-size: cover;
+	background-blend-mode: darken;
+	color: #fff;
+	text-align: center;
+	padding: 80px;
+	font-family: sans-serif;
+	font-size: 38px;
+}
+
+.promoxd{
+	padding-top: 50px;
+			  padding-bottom: 50px;
+			  color:white;
+			  font-size: 30px;
+}
+.btn-t{
+	padding: 4px 6px;
+	vertical-align: middle;
+	margin: 1px 0;
+	font-size: 16px;
+	border-radius: 6px;
+	border: 1px solid white;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+
+/*---------------------------------fun and game------------------------------*/
+.game-bg{
+/* The image used */
+	background-image: url("funone.gif");
+  
+	/* Full height */
+	height: 400px; 
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.game{
+
+	
+}
+
+.secftag{
+    padding-top: 30%;
+}
+.thumbnail img{
+width: 250px;
+border: 2px solid black;
+border-radius: 26px;
+margin-top: 80px;
+}
+
+.thumbnail2 img {
+
+	width: 250px;
+	border: 2px solid black;
+	border-radius: 26px;
+	margin-top: 150px;
+}
+
+.thumbnail3 img{
+	width: 250px;
+	border: 2px solid black;
+	border-radius: 26px;
+	margin-top: 10px;
+}
+.astro-mid{
+margin-left: 40%;
+font-family:'Dosis', sans-serif;
+color: red;
+}
+.bg-astro{
+	background-image: url("astrotwo.png");
+  
+	/* Full height */
+	height: 500px; 
+  color: white;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bg-astro-1{
+	background-image: url("Space-Backgrounds.png");
+  margin-top: 23%;
+	/* Full height */
+	height: 200px; 
+  color: black;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+		background-size: cover;
+}
+
+
+.burger{
+	display: none;
+position: absolute;
+cursor: pointer;
+right: 5px;
+top: 15px;
+}
+
+
+.line-1-1{
+	width: 33px;
+	background-color: white;
+	height: 4px;
+	margin: 5px 3px;
+}
+/*-----------responsive------------------*/
+@media only screen and (max-width:1250px){
+/*	.nav-list{
+		flex-direction: column;
+	}*/
+	.navbar{
+		flex-direction: column;
+	}
+	.rightnav{
+		text-align: center;
+	}
+
+	#search{
+		width: 100%;
+	}
+	.burger{
+		display: block;
+	}
+
+		.h-nav-resp{
+			height: 72px;
+		}
+
+		.v-class-resp{
+			opacity: 0;
+		}
+}
